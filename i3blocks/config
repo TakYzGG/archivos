@@ -1,0 +1,22 @@
+# Propiedades globales
+separator=true
+separator_block_width=15
+
+align=center
+markup=UbuntuMono 8
+color=#eeeeee
+
+[Bateria]
+command="$HOME"/.config/i3blocks/batt.py
+markup=pango
+interval=30
+
+[Volumen]
+command="$HOME"/.config/i3blocks/PulseAudio.sh
+interval=once
+signal=10
+color=#ffa252
+
+[Hora]
+command=date +'%H:%M'
+interval=1
