@@ -12,7 +12,7 @@ xbps-install -y xorg
 xbps-install -y i3 i3blocks
 
 # Descargar programas
-xbps-install -y lxterminal feh dmenu lxappearance Thunar midori pavucontrol brightnessctl
+xbps-install -y lxterminal feh dmenu lxappearance Thunar midori pavucontrol brightnessctl unzip
 
 # Descargar LxDM
 xbps-install -y lxdm
@@ -31,6 +31,9 @@ xbps-install -y pulseaudio
 
 # Habilitar PulseAudio
 ln -s /etc/sv/pulseaudio /var/service/
+
+# Habilitar Dbus
+ln -s /etc/sv/dbus /var/service
 
 # Reiniciar sistema
 reboot
