@@ -1,6 +1,6 @@
-#-----------------------------
-# <--Configuracion de i3wm-->>
-#-----------------------------
+#------------------------------
+# <<--Configuracion de i3wm-->>
+#------------------------------
 
 # Inicio automatico
 exec --no-startup-id dex --autostart --environment i3
