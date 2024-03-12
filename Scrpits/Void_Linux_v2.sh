@@ -28,6 +28,12 @@ xbps-install -y dmenu
 # Descargar LxTerminal
 xbps-install -y lxterminal
 
+# Descargar Pavucontrol
+xbps-install -y pavucontrol
+
+# Descarrgar LxAppearance
+xbps-install -y lxappearance
+
 # Descargar LxDM
 xbps-install -y lxdm
 
@@ -59,9 +65,6 @@ ln -s /etc/sv/dbus /var/service
 #-------------------------
 #<<--Iniciar Servicios-->>
 #-------------------------
-
-# Iniciar LxDM
-sv enable lxdm
 
 # Iniciar NetworkManager
 sv enable NetworkManager
