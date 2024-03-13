@@ -1,17 +1,17 @@
 #!/bin/bash
 # Creador: TakYz_GG
 
-#--------------------------
-#<<--Actualizar Sistema-->>
-#--------------------------
+#---------------------------
+# <<--Actualizar Sistema-->>
+#---------------------------
 
 # Actualizar el sistema
 xbps-install -S
 xbps-install -u
 
-#-----------------
-#<<--Descargas-->>
-#-----------------
+#------------------
+# <<--Descargas-->>
+#------------------
 
 # Descargar xorg
 xbps-install -y xorg
@@ -46,9 +46,9 @@ xbps-install -y pulseaudio
 # Descargar PulseAudio-Alsa
 xbps-install -y alsa-plugins-pulseaudio
 
-#---------------------------
-#<<--Habilitar Servicios-->>
-#---------------------------
+#----------------------------
+# <<--Habilitar Servicios-->>
+#----------------------------
 
 # Habiliar servicio de LxDM
 ln -s /etc/sv/lxdm /var/service/
@@ -62,9 +62,9 @@ ln -s /etc/sv/pulseaudio /var/service/
 # Habilitar Dbus
 ln -s /etc/sv/dbus /var/service
 
-#-------------------------
-#<<--Iniciar Servicios-->>
-#-------------------------
+#--------------------------
+# <<--Iniciar Servicios-->>
+#--------------------------
 
 # Iniciar NetworkManager
 sv enable NetworkManager
@@ -72,9 +72,9 @@ sv enable NetworkManager
 # Iniciar PulseAudio
 sv enable pulseaudio
 
-#-------------------------
-#<<--Reiniciar Sistema-->>
-#-------------------------
+#--------------------------
+# <<--Reiniciar Sistema-->>
+#--------------------------
 
 # Reiniciar sistema
 reboot
